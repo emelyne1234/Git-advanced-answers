@@ -80,6 +80,9 @@ commit 79c43eceda996037610341d97bad27d52aa7a040 (origin/main, origin/HEAD)
 Author: Emeline Uwimbabazi <105202770+emelyne1234@users.noreply.github.com>
 Date:   Mon May 20 19:32:43 2024 +0200
 
+challenge2: editting commit history
+
+
 Lenovo@Emelyne MINGW64 ~/OneDrive/Desktop/Git-exercise-advanced (main)     
 $ git add test4.md
 Lenovo@Emelyne MINGW64 ~/OneDrive/Desktop/Git-exercise-advanced (main)     
@@ -89,3 +92,21 @@ $ git commit --amend
  2 files changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test3.md
  create mode 100644 test4.md
+
+challenge 3:squashing
+ This is a combination of 2 commits.
+# This is the 1st commit message:
+
+chore: Create initial file
+
+# This is the commit message #2:
+
+chore: Create another file
+Lenovo@Emelyne MINGW64 ~/OneDrive/Desktop/Git-exercise-advanced (main) 
+$ git rebase -i HEAD~2
+[detached HEAD c8384af] This is a combination of 2 commits
+ Date: Mon May 20 19:47:16 2024 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.md
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
